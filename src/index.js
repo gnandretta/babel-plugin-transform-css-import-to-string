@@ -3,6 +3,10 @@ import p from 'path';
 import rework from 'rework';
 import reworkImport from 'rework-import';
 
+function endsWith(str, search) {
+  return str.indexOf(search, str.length - search.length) !== -1;
+}
+
 export default function ({ types: t }) {
   return {
     visitor: {
@@ -10,7 +14,7 @@ export default function ({ types: t }) {
         exit: function(path, state) {
           const node = path.node;
 
-          if (node.source.value.endsWith('.css')) {
+          if (endsWith(node.source.value, '.css')) {
             const dir = p.dirname(p.resolve(state.file.opts.filename));
             const absolutePath = p.resolve(dir, node.source.value);
 
