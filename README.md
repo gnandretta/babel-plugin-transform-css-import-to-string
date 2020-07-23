@@ -1,4 +1,6 @@
 # babel-plugin-transform-css-import-to-string
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fgnandretta%2Fbabel-plugin-transform-css-import-to-string.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fgnandretta%2Fbabel-plugin-transform-css-import-to-string?ref=badge_shield)
+
 
 Turn CSS imports into strings.
 
@@ -54,3 +56,7 @@ require("babel-core").transform("code", {
   plugins: ["transform-css-import-to-string"]
 });
 ```
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fgnandretta%2Fbabel-plugin-transform-css-import-to-string.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fgnandretta%2Fbabel-plugin-transform-css-import-to-string?ref=badge_large)
